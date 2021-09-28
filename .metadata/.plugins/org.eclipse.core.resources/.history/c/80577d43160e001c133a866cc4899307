@@ -1,5 +1,0 @@
-package com.designPatern.StructuralDesignPatterns.DecoratorPattern;
-
-public class B_Dynamic_Decorator {
-
-}

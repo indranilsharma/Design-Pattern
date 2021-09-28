@@ -1,5 +1,0 @@
-package com.designPatern.BehavioralDesignPatterns.Command;
-
-public class LoggingJob {
-
-}
