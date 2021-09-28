@@ -1,0 +1,5 @@
+package com.designPatern.CreationalDesignPatterns.FactoryPattern.factoryMethod_Pattren;
+
+public abstract class C_Shape {
+	void draw();
+}

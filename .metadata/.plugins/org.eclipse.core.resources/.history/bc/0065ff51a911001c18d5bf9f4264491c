@@ -1,0 +1,10 @@
+package com.designPatern.CreationalDesignPatterns.FactoryPattern.factoryMethod_Pattren;
+
+public class Rectangle extends C_Shape {
+
+	@Override
+	void draw() {
+		System.out.println("Inside Rectangle::draw() method.");
+	}
+
+}

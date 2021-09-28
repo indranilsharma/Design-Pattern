@@ -1,0 +1,10 @@
+package com.designPatern.CreationalDesignPatterns.FactoryPattern.AbstractFactoryPattern;
+
+public class B_Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

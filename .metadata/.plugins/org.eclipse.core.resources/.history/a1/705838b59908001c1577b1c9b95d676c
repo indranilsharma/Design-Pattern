@@ -1,0 +1,31 @@
+package com.designPatern.SOLID_Princliple;
+
+import java.io.IOException;
+
+class Document {
+
+}
+
+interface Machine {
+	void print(Document d) throws IOException;
+
+	void scan(Document d) throws IOException;
+
+	void fax(Document d) throws IOException;
+}
+
+interface Printer {
+	void print(Document d) throws IOException;
+}
+
+interface IScanner {
+	void scan(Document d) throws IOException;
+}
+
+public class IterfaceSegrigationPrinciple {
+
+	public static void main(String[] args) {
+
+	}
+
+}

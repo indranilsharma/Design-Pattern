@@ -1,0 +1,5 @@
+package com.designPatern.StructuralDesignPatterns.DecoratorPattern;
+
+public class C_Adapter_Decorator {
+
+}

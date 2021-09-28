@@ -1,0 +1,11 @@
+package com.designPatern.CreationalDesignPatterns.FactoryPattern.factoryMethod_Pattren;
+
+public class C_Square extends C_Shape {
+
+	@Override
+	void draw() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

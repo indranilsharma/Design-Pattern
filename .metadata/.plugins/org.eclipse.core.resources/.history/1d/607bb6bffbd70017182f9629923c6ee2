@@ -1,0 +1,8 @@
+package com.designPatern.CreationalDesignPatterns.PrototypePattern;
+
+public class TestPrototypePattern {
+	public static void main(String[] args) {
+		Employee employee = new Employee();
+
+	}
+}

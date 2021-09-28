@@ -1,0 +1,5 @@
+package com.designPatern.BehavioralDesignPatterns.Command;
+
+public class SmsJob {
+
+}

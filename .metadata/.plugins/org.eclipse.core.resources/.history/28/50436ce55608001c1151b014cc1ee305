@@ -1,0 +1,56 @@
+package com.designPatern.SOLID_Princliple;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
+enum Colour {
+	RED, GREEN, BLUE, BLACK
+}
+
+enum Size {
+	SMALL, MEDIUM, LARGE, EXTRA_LARGE
+}
+
+class Product {
+
+	public String name;
+	public Colour colour;
+	public Size size;
+
+	public Product(String name, Colour colour, Size size) {
+		this.name = name;
+		this.colour = colour;
+		this.size = size;
+	}
+}
+
+class ProductFilter {
+	public Stream<Product> filterByColour(List<Product> products, Colour colour) {
+		return products.stream().filter(p -> p.colour == colour);
+	}
+
+	public Stream<Product> filterBySize(List<Product> products, Size size) {
+		return products.stream().filter(p -> p.size == size);
+	}
+
+	public Stream<Product> filterByColourAndSize(List<Product> products, Colour colour, Size size) {
+		return products.stream().filter(p -> p.colour == colour && p.size == size);
+	}
+}
+
+public class Open_Close_Principle {
+
+	public static void main(String[] args) {
+		Product pen = new Product("Pen", Colour.RED, Size.SMALL);
+		Product brass = new Product("Brass", Colour.BLUE, Size.LARGE);
+		Product car = new Product("Car", Colour.RED, Size.LARGE);
+
+//		List<Product> products = List.of(pen, brass, car);
+		List<Product> products = Arrays.asList(pen, brass, car);
+
+		ProductFilter pf = new ProductFilter();
+		pf.filterByColour(products, Colour.RED).forEach(p -> System.out.println("-" + p.name + "is REd"));
+	}
+
+}

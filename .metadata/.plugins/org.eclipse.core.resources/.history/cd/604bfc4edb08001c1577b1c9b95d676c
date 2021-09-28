@@ -1,0 +1,40 @@
+package com.designPatern.SOLID_Princliple;
+
+interface ICustomerDataAccess {
+	String GetCustomerName(int id);
+}
+
+class CustomerDataAccess implements ICustomerDataAccess {
+	public CustomerDataAccess() {
+	}
+
+	public String GetCustomerName(int id) {
+		return "Dummy Customer Name";
+	}
+}
+
+class DataAccessFactory {
+	public static ICustomerDataAccess GetCustomerDataAccessObj() {
+		return new CustomerDataAccess();
+	}
+}
+
+class CustomerBusinessLogic {
+	ICustomerDataAccess _custDataAccess;
+
+	public CustomerBusinessLogic() {
+		_custDataAccess = DataAccessFactory.GetCustomerDataAccessObj();
+	}
+
+	public String GetCustomerName(int id) {
+		return _custDataAccess.GetCustomerName(id);
+	}
+}
+
+public class Dependency_Inversion_Principle {
+
+	public static void main(String[] args) {
+
+	}
+
+}

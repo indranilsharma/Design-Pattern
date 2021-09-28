@@ -1,0 +1,11 @@
+package com.designPatern.CreationalDesignPatterns.FactoryPattern.AbstractFactoryPattern;
+
+public class B_RoundedShapeFactory extends B_AbstractFactory {
+
+	@Override
+	B_Shape getShape(String shapeType) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

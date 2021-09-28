@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DesignPatern/src/com/designPatern/CreationalDesignPatterns/BuilderPattern/Computer.java&apos; to &apos;ComputerClass.java&apos;" description="Rename resource &apos;Computer.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/designPatern/CreationalDesignPatterns/BuilderPattern/Computer.java" name="ComputerClass.java" stamp="1512272494334" updateReferences="true"/>
+</session>
